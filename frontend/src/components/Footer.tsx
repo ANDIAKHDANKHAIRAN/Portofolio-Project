@@ -1,3 +1,4 @@
+import link from "next/link";
 import Link from "next/link";
 
 const quickLinks = [
@@ -51,15 +52,19 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-3">Social Media</h4>
             <ul className="space-y-2">
-              {socialLinks.map((link) => (
-                <li key={link.label}>
+              {[
+                  { label: "Instagram", link: "https://www.instagram.com/andi_akhdan/" },
+                  { label: "Github", link: "https://github.com/ANDIAKHDANKHAIRAN" },
+                  { label: "Linkedin", link: "https://www.linkedin.com/in/andi-akhdan-khairan-042a68425/" },
+                ].map((social) => (
+                <li key={social.label}>
                   <a
-                    href={link.href}
+                    href={social.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-indigo-400 text-sm transition-colors duration-300"
                   >
-                    {link.label}
+                    {social.label}
                   </a>
                 </li>
               ))}

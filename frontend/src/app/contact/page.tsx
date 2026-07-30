@@ -112,8 +112,8 @@ export default function ContactPage() {
                 {
                   icon: "📱",
                   title: "Telepon",
-                  value: "+62 812-xxxx-xxxx",
-                  description: "Tersedia di jam sekolah (08.00 - 15.00 WIB).",
+                  value: "+62 823 4650 4593",
+                  description: "Tersedia di jam sekolah (07.00 - 16.00 WIB).",
                 },
                 {
                   icon: "📍",
@@ -148,13 +148,17 @@ export default function ContactPage() {
             <div className="p-6 rounded-2xl bg-gray-900/50 border border-gray-800/50">
               <h3 className="text-white font-semibold mb-4">Social Media</h3>
               <div className="flex gap-3">
-                {["GitHub", "LinkedIn", "Instagram"].map((social) => (
+                {[
+                  { label: "Instagram", link: "https://www.instagram.com/andi_akhdan/" },
+                  { label: "Github", link: "https://github.com/ANDIAKHDANKHAIRAN" },
+                  { label: "Linkedin", link: "https://www.linkedin.com/in/andi-akhdan-khairan-042a68425/" },
+                ].map((social) => (
                   <a
-                    key={social}
-                    href="#"
+                    key={social.label}
+                    href={social.link}
                     className="px-4 py-2 rounded-xl bg-gray-800/50 border border-gray-700/50 text-gray-400 text-sm hover:text-white hover:border-indigo-500/30 transition-all duration-300"
                   >
-                    {social}
+                    {social.label}
                   </a>
                 ))}
               </div>

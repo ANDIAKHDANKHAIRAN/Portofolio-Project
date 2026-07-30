@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutPage() {
   return (
     <section className="py-16 sm:py-20">
@@ -19,9 +21,14 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Ini photo dan info */}
           <div className="flex flex-col items-center lg:items-start gap-6">
-            <div className="w-48 h-48 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-violet-500/20 border border-gray-800/50 flex items-center justify-center">
-              <span className="text-6xl">👤</span>
-            </div>
+            <div className="w-48 h-48 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-violet-500/20 border border-gray-800/50 flex items-center justify-center relative overflow-hidden">
+  <Image
+    src="/Foto-saya.png"
+    alt="Profile"
+    fill
+    className="object-cover"
+  />
+</div>
 
             <div className="w-full space-y-3">
               {[
@@ -100,7 +107,7 @@ export default function AboutPage() {
                   2024 — Sekarang
                 </span>
                 <h3 className="text-white font-semibold mt-1">
-                  SMK ... — XII RPL 1
+                  SMK TELKOM MAKASSAR — XII RPL 1
                 </h3>
                 <p className="text-gray-400 text-sm mt-1">
                   Mempelajari pemrograman web, mobile, dan desktop. Fokus
