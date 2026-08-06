@@ -23,7 +23,7 @@ export default function AboutPage() {
           <div className="flex flex-col items-center lg:items-start gap-6">
             <div className="w-48 h-48 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-violet-500/20 border border-gray-800/50 flex items-center justify-center relative overflow-hidden">
   <Image
-    src="/Foto-saya.png"
+    src="/Foto4-saya.png"
     alt="Profile"
     fill
     className="object-cover"

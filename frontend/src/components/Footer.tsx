@@ -1,4 +1,3 @@
-import link from "next/link";
 import Link from "next/link";
 
 const quickLinks = [
@@ -6,12 +5,6 @@ const quickLinks = [
   { href: "/about", label: "About" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/contact", label: "Contact" },
-];
-
-const socialLinks = [
-  { href: "#", label: "GitHub" },
-  { href: "#", label: "LinkedIn" },
-  { href: "#", label: "Instagram" },
 ];
 
 export default function Footer() {
