@@ -43,58 +43,24 @@ export interface Testimonial {
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-commerce Web Application",
+    title: "Frezz-Laundy",
     category: "Web Dev",
-    description: "A full-featured e-commerce platform with cart, payment gateway, and admin panel.",
+    description: "Adalah Web Berbasis Aplikasi Yang Membantu Kasir Untuk Mengindput data Tanpa Harus Menggunakan Karcis Ataua Secara Digital",
     tech: ["Next.js", "React", "Tailwind CSS", "Express.js", "MySQL"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/ANDIAKHDANKHAIRAN/Frezz_laundry",
   },
+
   {
     id: 2,
-    title: "Attendance App with GPS",
-    category: "Mobile App",
-    description: "Mobile application for employee attendance tracking with geo-tagging and face detection.",
-    tech: ["React Native", "Expo", "Node.js", "MongoDB"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 3,
-    title: "School Management System Dashboard",
-    category: "UI/UX",
-    description: "Intelligent UI/UX design prototype for managing school courses, students, and grading system.",
-    tech: ["Figma", "UI Design", "Prototyping"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 4,
-    title: "Personal Landing Page Portfolio",
+    title: "Project Portofolio Summary",
     category: "Web Dev",
-    description: "Highly responsive, premium dark-themed portfolio site built with speed and animations.",
-    tech: ["HTML5", "Vanilla JS", "Tailwind CSS"],
+    description: "Dibuat Aplikasi Berbasis Web Menggunakan Laravel Untuk Membantu pengguna menanndai dan mengelompokkan barang yang ingin dimiliki berdasarkan tingkat kebutuhan.",
+    tech: ["Xampp", "Composer", "Vscode", "PHP", "MySQL"],
     demoUrl: "#",
     githubUrl: "#",
   },
-  {
-    id: 5,
-    title: "Task Management Mobile App",
-    category: "Mobile App",
-    description: "Cross-platform mobile app to track tasks, organize projects, and collaborate with team members.",
-    tech: ["Flutter", "Dart", "Firebase"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 6,
-    title: "Smart Home Control Interface",
-    category: "UI/UX",
-    description: "Modern dark-themed dashboard design for smart home appliance monitoring.",
-    tech: ["Figma", "Interaction Design"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
+  
 ];
 
 // 2. Data Skills
@@ -103,11 +69,11 @@ const skillGroups: SkillGroup[] = [
     title: "Frontend Development",
     icon: "💻",
     skills: [
-      { name: "HTML5 / CSS3", level: "Advanced", percentage: 90 },
-      { name: "JavaScript (ES6+)", level: "Advanced", percentage: 85 },
-      { name: "React.js", level: "Intermediate", percentage: 75 },
-      { name: "Next.js (App Router)", level: "Intermediate", percentage: 70 },
-      { name: "Tailwind CSS", level: "Advanced", percentage: 90 },
+      { name: "HTML5 / CSS3", level: "Basic", percentage: 0 },
+      { name: "JavaScript (ES6+)", level: "Basic", percentage: 0 },
+      { name: "React.js", level: "Basic", percentage: 5 },
+      { name: "Next.js (App Router)", level: "Basic", percentage: 15 },
+      { name: "Tailwind CSS", level: "Basic", percentage: 0 },
     ],
   },
   {
@@ -124,9 +90,9 @@ const skillGroups: SkillGroup[] = [
     title: "Tools & Platforms",
     icon: "🛠️",
     skills: [
-      { name: "Git & GitHub", level: "Advanced", percentage: 85 },
-      { name: "Figma (UI/UX)", level: "Intermediate", percentage: 70 },
-      { name: "Postman", level: "Advanced", percentage: 80 },
+      { name: "Git & GitHub", level: "Basic", percentage: 50 },
+      { name: "Figma (UI/UX)", level: "Basic", percentage: 70 },
+      { name: "Postman", level: "Intermediate", percentage: 50 },
       { name: "VS Code", level: "Advanced", percentage: 95 },
     ],
   },
@@ -173,6 +139,15 @@ const certificates: Certificate[] =  [
     date: "Januari 25 , 2025",
     credentialId: "1OP82DG42PQK",
     verificationUrl: "https://dicoding.com/certificates/1OP82DG42PQK",
+  },
+
+   {
+    id: 6,
+    title: "Laravel Web Programmer",
+    issuer: "Telkom Digiup",
+    date: "December 22 , 2025",
+    credentialId: "D2500806",
+    verificationUrl: "",
   },
 ];
 

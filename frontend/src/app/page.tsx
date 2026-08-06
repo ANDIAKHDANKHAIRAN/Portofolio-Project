@@ -66,20 +66,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* card 1 */}
-            <div className="group p-6 rounded-2xl bg-gray-900/50 border border-gray-800/50 hover:border-indigo-500/30 transition-all duration-300 hover:-translate-y-1">
-              <div className="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-4 group-hover:bg-indigo-500/20 transition-colors duration-300">
-                <span className="text-2xl">💻</span>
-              </div>
-              <h3 className="text-lg font-semibold text-white mb-2">
-                Frontend Development
-              </h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Membangun antarmuka web yang responsif dan interaktif
-                menggunakan React, Next.js, dan Tailwind CSS.
-              </p>
-            </div>
+          
 
             {/* card 2 */}
             <div className="group p-6 rounded-2xl bg-gray-900/50 border border-gray-800/50 hover:border-violet-500/30 transition-all duration-300 hover:-translate-y-1">
@@ -95,21 +82,8 @@ export default function Home() {
               </p>
             </div>
 
-            {/* card 3 */}
-            <div className="group p-6 rounded-2xl bg-gray-900/50 border border-gray-800/50 hover:border-purple-500/30 transition-all duration-300 hover:-translate-y-1">
-              <div className="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-4 group-hover:bg-purple-500/20 transition-colors duration-300">
-                <span className="text-2xl">🎨</span>
-              </div>
-              <h3 className="text-lg font-semibold text-white mb-2">
-                UI/UX Design
-              </h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Mendesain pengalaman pengguna yang intuitif dan tampilan
-                visual yang modern dan menarik.
-              </p>
-            </div>
           </div>
-        </div>
+        
       </section>
     </>
   );
