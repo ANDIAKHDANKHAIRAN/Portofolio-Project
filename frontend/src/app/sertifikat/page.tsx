@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { getCertificates, Certificate } from "@/data/mockData";
 import SkeletonCard from "@/components/SkeletonCard";
 
@@ -46,9 +47,23 @@ export default function CertificatePage() {
             : certificatesList.map((cert) => (
                 <div
                   key={cert.id}
-                  className="group p-6 rounded-2xl bg-gray-900/50 border border-gray-800/50 hover:border-indigo-500/30 hover:-translate-y-1 transition-all duration-300"
+                  className="group rounded-2xl bg-gray-900/50 border border-gray-800/50 hover:border-indigo-500/30 hover:-translate-y-1 transition-all duration-300 overflow-hidden"
                 >
-                  <div>
+                  {/* Foto Sertifikat */}
+                  <div className="relative w-full h-48 overflow-hidden bg-gray-800 flex items-center justify-center">
+                    {cert.image ? (
+                      <Image
+                        src={cert.image}
+                        alt={cert.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    ) : (
+                      <span className="text-5xl opacity-20"></span>
+                    )}
+                  </div>
+
+                  <div className="p-6">
                     <div className="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-6 group-hover:bg-indigo-500/20 transition-colors duration-300">
                       <span className="text-2xl">🏆</span>
                     </div>
@@ -69,17 +84,17 @@ export default function CertificatePage() {
                         {cert.credentialId}
                       </div>
                     </div>
-                  </div>
 
-                  <div className="mt-8 pt-4 border-t border-gray-800/50">
-                    <a
-                      href={cert.verificationUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-sm font-semibold text-white hover:text-indigo-400 transition-colors"
-                    >
-                      Lihat Kredensial <span className="text-xs">↗</span>
-                    </a>
+                    <div className="mt-8 pt-4 border-t border-gray-800/50">
+                      <a
+                        href={cert.verificationUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-sm font-semibold text-white hover:text-indigo-400 transition-colors"
+                      >
+                        Lihat Kredensial <span className="text-xs">↗</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               ))}

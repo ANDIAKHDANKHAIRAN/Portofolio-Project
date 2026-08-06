@@ -27,6 +27,7 @@ export interface Certificate {
   date: string;
   credentialId: string;
   verificationUrl: string;
+  image: string;
 }
 
 export interface Testimonial {
@@ -107,6 +108,7 @@ const certificates: Certificate[] =  [
     date: "Januari 11 ,2025",
     credentialId: "JMZVEMY4QPN9",
     verificationUrl: "https://dicoding.com/certificates/JMZVEMY4QPN9",
+    image:"/sertifikat/JMZVEMY4QPN9.png"
   },
   {
     id: 2,
@@ -115,6 +117,7 @@ const certificates: Certificate[] =  [
     date: "May 30 , 2026",
     credentialId: "",
     verificationUrl: "https://www.AiClassASEAN.org",
+    image:"/sertifikat/Ai_class.png"
   },
   {
     id: 3,
@@ -123,6 +126,7 @@ const certificates: Certificate[] =  [
     date: "Maret 2025",
     credentialId: "Cert ID: 50c8f994-1c64-4caa-8277-c3d28bd37d5a",
     verificationUrl: "https://www.credly.com/badges/67e41dc1-ac41-4460-97ab-4727a09cbf3a/public_url",
+    image:"/sertifikat/Java_essentials.png"
   },
   {
     id: 4,
@@ -131,6 +135,7 @@ const certificates: Certificate[] =  [
     date: "Januari 25 , 2025",
     credentialId: "98XWERNWWXM3",
     verificationUrl: "https://dicoding.com/certificates/98XWERNWWXM3",
+    image:"/sertifikat/98XWERNWWXM3.png"
   },
   {
     id: 5,
@@ -139,6 +144,7 @@ const certificates: Certificate[] =  [
     date: "Januari 25 , 2025",
     credentialId: "1OP82DG42PQK",
     verificationUrl: "https://dicoding.com/certificates/1OP82DG42PQK",
+    image:"/sertifikat/1OP82DG42PQK.png"
   },
 
    {
@@ -148,6 +154,7 @@ const certificates: Certificate[] =  [
     date: "December 22 , 2025",
     credentialId: "D2500806",
     verificationUrl: "",
+    image:"/sertifikat/Laravel_web_programmer.png"
   },
 ];
 
