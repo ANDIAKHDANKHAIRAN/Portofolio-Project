@@ -166,7 +166,7 @@ const testimonials: Testimonial[] = [
     role: "Kepala Jurusan RPL",
     company: "SMK Negeri 1",
     avatar: "👨‍🏫",
-    stars: 5,
+    stars: 10,
     quote:
       "Alif menunjukkan performa luar biasa dalam setiap tugas dan proyek sekolah. Dia selalu menjadi leader dalam team project karena inisiatifnya yang tinggi.",
   },
